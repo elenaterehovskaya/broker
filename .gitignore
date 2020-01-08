@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+.vscode
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+layout/
+Thumbs.db
+vendor
