@@ -99,9 +99,9 @@ input[type="radio"].visually-hidden {
  */
 .site-list {
   margin: 0;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   padding: 0;
-  padding-top: 150px;
+  padding-top: 100px;
   font-weight: 600;
   font-size: 20px;
   line-height: 42px;
@@ -114,7 +114,7 @@ input[type="radio"].visually-hidden {
 .site-list__link {
   display: block;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   color: #ffffff;
   text-decoration: none;
   transition: 0.2s ease-in-out;
