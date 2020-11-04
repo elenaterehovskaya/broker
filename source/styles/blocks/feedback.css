@@ -1,0 +1,99 @@
+/* Блок feedback — Блок обратной связи */
+
+.feedback {
+  position: relative;
+  box-sizing: border-box;
+  width: auto;
+  min-height: 1010px;
+  padding-top: 75px;
+  text-align: center;
+  background: url("../../images/forma-tablet@1x.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.feedback::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 1010px;
+  background-color: rgba(0, 37, 67, 0.9);
+}
+
+.feedback__wrapper {
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.feedback__title {
+  margin: 0;
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.feedback__text {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 768px) {
+  .feedback {
+    min-height: 850px;
+  }
+
+  .feedback::before {
+    min-height: 850px;
+  }
+
+  .feedback__wrapper {
+    width: 500px;
+  }
+
+  .feedback__text {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feedback {
+    min-height: 770px;
+    background: url("../../images/forma-desktop@1x.jpg") no-repeat center;
+  }
+
+  .feedback::before {
+    width: 50%;
+    min-height: 770px;
+  }
+
+  .feedback__wrapper {
+    width: 1200px;
+    padding-right: 670px;
+    padding-left: 110px;
+    text-align: left;
+  }
+
+  .feedback__title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .feedback__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

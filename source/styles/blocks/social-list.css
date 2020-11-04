@@ -1,0 +1,20 @@
+/* Блок социальных сетей social-list на главном экране — main-screen__social-list */
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.social-list__icon {
+  display: block;
+  fill: rgba(255, 255, 255, 0.9);
+}
+
+.social-list__icon:hover,
+.social-list__icon:focus {
+  fill: rgba(255, 163, 86, 1);
+}

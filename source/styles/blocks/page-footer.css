@@ -1,0 +1,74 @@
+/* Блок page-footer */
+
+.page-footer {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background-color: rgba(0, 37, 67, 1);
+}
+
+.page-footer__wrapper {
+  width: 290px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Блок социальных сетей social-list в page-footer */
+
+.page-footer__list {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.page-footer__phone {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.page-footer__phone a {
+  color: rgba(255, 163, 86, 1);
+  text-decoration: none;
+}
+
+.page-footer__info {
+  margin: 0;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: rgba(255, 163, 86, 1);
+}
+
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 698px;
+    padding: 0 35px;
+  }
+
+  .page-footer__phone {
+    order: -1;
+    width: 33%;
+    margin: 0;
+    text-align: left;
+  }
+
+  .page-footer__info {
+    width: 33%;
+    text-align: right;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-footer__wrapper {
+    width: 1170px;
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,154 @@
+/* Блок stages — Этапы работы */
+
+.stages {
+  width: 290px;
+  margin: 0 auto;
+  padding: 0 15px;
+  padding-top: 80px;
+}
+
+.stages__title {
+  margin: 0;
+  margin-bottom: 45px;
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: rgba(0, 37, 67, 1);
+}
+
+.stages__list {
+  margin: 0;
+  margin-bottom: 70px;
+  padding: 0;
+  list-style: none;
+}
+
+.stages__item {
+  margin-bottom: 55px;
+}
+
+.stages__item span {
+  display: none;
+}
+
+.stages__caption {
+  position: relative;
+  margin: 0;
+  margin-bottom: 35px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 26px;
+  color: #313131;
+}
+
+.stages__caption::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 41px;
+  height: 1px;
+  background-color: rgba(0, 37, 67, 1);
+}
+
+.stages__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+@media (min-width: 768px) {
+  .stages {
+    width: 698px;
+    padding: 0 35px;
+    padding-top: 100px;
+  }
+
+  .stages__title {
+    text-align: left;
+  }
+
+  .stages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .stages__item {
+    position: relative;
+    width: calc(50% - 70px);
+    margin-bottom: 70px;
+    padding-left: 70px;
+  }
+
+  .stages__item span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    box-sizing: border-box;
+    display: block;
+    width: 25px;
+    height: 25px;
+    padding-top: 5px;
+    font-family: "Helvetica", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 163, 86, 0.4);
+    border-radius: 50%;
+    box-shadow: 0 0 0 6px #fdfaf3, 0 0 0 7px rgba(255, 163, 86, 0.4), 0 0 0 13px #fdfaf3, 0 0 0 14px rgba(255, 163, 86, 0.4);
+  }
+
+  .stages__item:hover span,
+  .stages__item:focus span {
+    background-color: rgba(255, 163, 86, 0.8);
+    box-shadow: 0 0 0 6px #fdfaf3, 0 0 0 7px rgba(255, 163, 86, 0.8), 0 0 0 13px #fdfaf3, 0 0 0 14px rgba(255, 163, 86, 0.8);
+    transition: 0.2s ease-in-out;
+  }
+
+  .stages__caption {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .stages__description {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .stages {
+    width: 1170px;
+    padding: 0 15px;
+    padding-top: 120px;
+  }
+
+  .stages__item {
+    width: calc(33% - 100px);
+    padding-left: 100px;
+  }
+
+  .stages__item span {
+    left: 50px;
+  }
+}
+
+/*
+.features__list {
+  counter-reset: li;  Инициализируем счетчик
+  list-style: none; Отменяем нумерацию установленную по умолчанию
+  box-shadow: inset 0 0 0 1px red;
+}
+
+.features__item::before {
+  content: "0" counter(li); В качестве данных используем счетчик
+  counter-increment: li; Увеличиваем значение счетчика на 1
+*/
