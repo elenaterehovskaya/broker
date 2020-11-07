@@ -1,7 +1,7 @@
 // Меню
 let navMain = document.querySelector(".main-screen__nav");
 let navToggle = document.querySelector(".main-screen__toggle");
-let linkMain = document.querySelector(".site-list__link--main");
+let linkMain = document.querySelector(".menu__link--main");
 
 navToggle.addEventListener("click", function() {
   if (navMain.classList.contains("main-screen__nav--closed")) {

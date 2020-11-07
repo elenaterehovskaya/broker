@@ -6,13 +6,12 @@ body {
   color: #000000;
   background-color: #fdfaf3;
 }
-/*
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-*/
 
 img {
   max-width: 100%;

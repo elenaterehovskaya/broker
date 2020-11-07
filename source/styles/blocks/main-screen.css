@@ -2,8 +2,7 @@
 
 .main-screen {
   position: relative;
-  width: auto;
-  min-height: 640px;
+  min-height: 580px;
   background: url("../../images/moscow-tablet@1x.jpg") no-repeat center;
   background-size: cover;
 }
@@ -14,7 +13,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 640px;
+  min-height: 580px;
   background-color: rgba(0, 37, 67, 0.9);
 }
 
@@ -22,14 +21,27 @@
   position: relative;
 }
 
-.main-screen__lists {
+.main-screen__lists { /* обёртка для списка меню и списка социальных сетей */
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+  margin: 0 auto;
   width: 100%;
-  min-height: 640px;
-  background-color: rgba(0, 37, 67, 1);
+  min-height: 580px;
+  padding-top: 100px;
+  background-color: rgb(0, 37, 67);
+}
+
+.main-screen__menu { /* для блока меню menu */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.main-screen__social { /* для блока социальных сетей social */
+  margin: 0 auto;
 }
 
 /*
@@ -62,8 +74,8 @@
 
 .main-screen__nav--closed .main-screen__toggle:hover::before,
 .main-screen__nav--closed .main-screen__toggle:focus::before {
-  background-color: rgba(255, 163, 86, 1);
-  box-shadow: 0 10px 0 0 rgba(255, 163, 86, 1), 0 20px 0 0 rgba(255, 163, 86, 1);
+  background-color: rgb(255, 163, 86);
+  box-shadow: 0 10px 0 0 rgb(255, 163, 86), 0 20px 0 0 rgb(255, 163, 86);
 }
 
 .main-screen__nav--opened .main-screen__toggle::before,
@@ -82,7 +94,7 @@
 .main-screen__nav--opened .main-screen__toggle:focus::before,
 .main-screen__nav--opened .main-screen__toggle:hover::after,
 .main-screen__nav--opened .main-screen__toggle:focus::after {
-  background-color: rgba(255, 163, 86, 1);
+  background-color: rgb(255, 163, 86);
 }
 
 .main-screen__nav--opened .main-screen__toggle::before {
@@ -101,122 +113,18 @@
   display: block;
 }
 
-/*
-Блок с заголовком, слоганом и кнопкой-ссылкой на главном экране — main-screen__intro
- */
-.main-screen__intro {
-  position: relative;
-  box-sizing: border-box;
-  width: 320px;
-  margin: 0 auto;
-  padding-top: 120px;
-  text-align: center;
-  color: #ffffff;
-}
-
-.main-screen__title {
-  margin: 0;
-  margin-bottom: 25px;
-  font-family: "Playfair Display", "Times New Roman", serif;
-  font-weight: 700;
-  font-size: 54px;
-  line-height: 54px;
-  letter-spacing: 2px;
-}
-
-.main-screen__slogan {
-  margin: 0;
-  margin-bottom: 25px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 1px;
-}
-
-.main-screen__link {
-  position: relative;
-  display: inline-block;
-  padding: 20px 60px;
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 2px;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: rgba(255, 163, 86, 1);
-  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-
-.main-screen__link::before {
-  content: "";
-  position: absolute;
-  bottom: -85px;
-  left: 50%;
-  width: 3px;
-  height: 55px;
-  background-color: rgba(255, 255, 255, 0.6);
-  transform: translateX(-50%);
-}
-
-.main-screen__link::after {
-  content: "";
-  position: absolute;
-  bottom: -87px;
-  left: 50%;
-  width: 8px;
-  height: 8px;
-  border-bottom: 3px solid rgba(255, 255, 255, 0.6);
-  border-left: 3px solid rgba(255, 255, 255, 0.6);
-  transform: translateX(-50%) rotate(-45deg);
-}
-
-.main-screen__phone {
-  position: absolute;
-  display: block;
-  top: 580px;
-  right: 50%;
-  font-weight: 400;
-  font-size: 18px;
-  letter-spacing: 1.5px;
-  white-space: nowrap;
-  color: #ffffff;
-  text-decoration: none;
-  transform: translateX(50%);
-}
-
-.main-screen__phone:hover,
-.main-screen__phone:focus {
-  color: rgba(255, 163, 86, 1);
-}
-
-.main-screen__social-list {
-  width: 185px;
-}
-
-.main-screen__main-social-list {
-  display: none;
-}
-
 @media (min-width: 768px) {
   .main-screen {
-    min-height: 800px;
+    min-height: 740px;
     margin: 0 auto;
   }
 
   .main-screen::before {
-    min-height: 800px;
+    min-height: 740px;
   }
 
   .main-screen__lists {
-    min-height: 800px;
-  }
-
-  .site-list {
-    font-size: 22px;
-    line-height: 44px;
-    letter-spacing: 3px;
+    min-height: 740px;
   }
 
   .main-screen__toggle {
@@ -234,7 +142,7 @@
 
   .main-screen__nav--closed .main-screen__toggle:hover::before,
   .main-screen__nav--closed .main-screen__toggle:focus::before {
-    box-shadow: 0 17px 0 0 rgba(255, 163, 86, 1), 0 34px 0 0 rgba(255, 163, 86, 1);
+    box-shadow: 0 17px 0 0 rgb(255, 163, 86), 0 34px 0 0 rgb(255, 163, 86);
   }
 
   .main-screen__nav--opened .main-screen__toggle::before,
@@ -243,36 +151,6 @@
     right: 0;
     width: 45px;
     height: 3px;
-  }
-
-  .main-screen__intro {
-    width: 768px;
-    padding: 0 60px;
-    padding-top: 150px;
-  }
-
-  .main-screen__title {
-    margin-bottom: 55px;
-    font-size: 90px;
-    line-height: 90px;
-  }
-
-  .main-screen__slogan {
-    margin-bottom: 45px;
-    font-size: 24px;
-    line-height: 34px;
-  }
-
-  .main-screen__link {
-    padding: 30px 70px;
-    font-size: 21px;
-    line-height: 21px;
-  }
-
-  .main-screen__phone {
-    top: 730px;
-    font-size: 24px;
-    letter-spacing: 2px;
   }
 }
 
@@ -299,14 +177,6 @@
     margin-top: 85px;
   }
 
-  .site-list {
-    padding-top: 80px;
-  }
-
-  .site-list__link {
-    color: rgba(255, 255, 255, 0.75);
-  }
-
   .main-screen__toggle {
     top: 40px;
     right: 0;
@@ -323,7 +193,7 @@
 
   .main-screen__nav--closed .main-screen__toggle:hover::before,
   .main-screen__nav--closed .main-screen__toggle:focus::before {
-    box-shadow: 0 12px 0 0 rgba(255, 163, 86, 1), 0 24px 0 0 rgba(255, 163, 86, 1);
+    box-shadow: 0 12px 0 0 rgb(255, 163, 86), 0 24px 0 0 rgb(255, 163, 86);
   }
 
   .main-screen__nav--opened .main-screen__toggle::before,
@@ -335,120 +205,31 @@
   }
 
   .main-screen__phone {
-    top: 50px;
+    position: absolute;
+    top: 45px;
     right: 0;
+    display: flex;
+    align-items: flex-end;
     font-weight: 600;
     font-size: 18px;
+    line-height: 1.2;
     letter-spacing: 1px;
+    white-space: nowrap;
     color: rgba(0, 37, 67, 0.7);
+    text-decoration: none;
     transform: translateX(0);
   }
 
-  .main-screen__intro {
-    width: 1170px;
-    margin: 0 auto;
-    padding: 0;
-    padding-top: 230px;
-    padding-left: 100px;
-    text-align: left;
-    background: transparent;
+  .main-screen__phone:hover,
+  .main-screen__phone:focus {
+    color: rgb(255, 163, 86);
   }
 
-  .main-screen__title {
-    width: 400px;
-    margin-bottom: 30px;
-    font-size: 60px;
-    line-height: 60px;
-  }
-
-  .main-screen__slogan {
-    width: 400px;
-    margin-bottom: 50px;
-    font-size: 17px;
-    line-height: 24px;
-  }
-
-  .main-screen__link {
-    padding: 20px;
-    padding-right: 120px;
-    font-size: 14px;
-    line-height: 14px;
-    letter-spacing: 3px;
-    background-color: transparent;
-    border: 1px solid #ffffff;
-  }
-
-  .main-screen__link::before {
-    bottom: 50%;
-    left: 235px;
-    width: 50px;
-    height: 2px;
-    background-color: #ffffff;
-  }
-
-  .main-screen__link::after {
-    bottom: calc(50% - 4px);
-    left: 250px;
-    border-bottom: 2px solid #ffffff;
-    border-left: 2px solid #ffffff;
-    transform: rotate(-135deg);
-  }
-
-  .main-screen__link:hover,
-  .main-screen__link:focus {
-    background-color: rgba(255, 163, 86, 1);
-    transition: 0.2s ease-in-out;
-  }
-
-  .main-social {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 260px;
-    margin-top: 140px;
-    margin-left: auto;
-    padding: 0;
-    list-style: none;
-  }
-
-  .main-social__link {
-    position: relative;
-    display: block;
-    width: 80px;
-    height: 35px;
-    background-color: rgba(8, 33, 53, 0.2);
-    cursor: pointer;
-  }
-
-  .main-social__link:hover,
-  .main-social__link:focus {
-    background-color: rgba(255, 163, 86, 0.85);
-    transition: 0.2s ease-in-out;
-  }
-
-  .main-social__link::before {
+  .main-screen__phone::before {
     content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .main-social__link--vkontakte::before {
-    width: 26px;
-    height: 15px;
-    background: url("../../images/icon-vkontakte.svg") no-repeat 0 0;
-  }
-
-  .main-social__link--instagram::before {
-    width: 21px;
-    height: 21px;
-    background: url("../../images/icon-instagram.svg") no-repeat 0 0;
-  }
-
-  .main-social__link--facebook::before {
-    width: 12px;
-    height: 22px;
-    background: url("../../images/icon-facebook.svg") no-repeat 0 0;
+    width: 18px;
+    height: 19px;
+    margin-right: 5px;
+    background: url("../../images/icon-phone.svg") no-repeat 0 0;
   }
 }

@@ -34,44 +34,44 @@
             <!-- main-screen__toggle — класс для кнопки, клик по которой переключает состояния меню -->
             <button class="main-screen__toggle" type="button" aria-label="Открыть или закрыть меню сайта"></button>
             <div class="main-screen__lists">
-              <ul class="site-list main-screen__site-list">
+              <ul class="main-screen__menu menu">
                 <li>
-                  <a class="site-list__link site-list__link--main" href="#">Главная</a>
+                  <a class="menu__link menu__link--main" href="#">Главная</a>
                 </li>
                 <li>
-                  <a class="site-list__link" href="#features">Преимущества</a>
+                  <a class="menu__link" href="#features">Преимущества</a>
                 </li>
                 <li>
-                  <a class="site-list__link" href="#portfolio">Портфолио</a>
+                  <a class="menu__link" href="#portfolio">Портфолио</a>
                 </li>
                 <li>
-                  <a class="site-list__link" href="#stages">Этапы работы</a>
+                  <a class="menu__link" href="#stages">Этапы работы</a>
                 </li>
                 <li>
-                  <a class="site-list__link" href="#reviews">Отзывы</a>
+                  <a class="menu__link" href="#reviews">Отзывы</a>
                 </li>
                 <li>
-                  <a class="site-list__link" href="#feedback">Оставить заявку</a>
+                  <a class="menu__link" href="#feedback">Оставить заявку</a>
                 </li>
               </ul>
-              <ul class="social-list main-screen__social-list">
+              <ul class="main-screen__social social">
                 <li>
-                  <a class="social-list__link" href="#" target="_blank" aria-label="Вконтакте">
-                    <svg class="social-list__icon" width="30" height="19">
+                  <a class="social__link" href="#" target="_blank" aria-label="Вконтакте">
+                    <svg class="social__icon" width="30" height="19">
                       <use xlink:href="#icon-vkontakte"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="social-list__link" href="#" target="_blank" aria-label="Инстаграм">
-                    <svg class="social-list__icon" width="27" height="27">
+                  <a class="social__link" href="#" target="_blank" aria-label="Инстаграм">
+                    <svg class="social__icon" width="27" height="27">
                       <use xlink:href="#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a class="social-list__link" href="#" target="_blank" aria-label="Фейсбук">
-                    <svg class="social-list__icon" width="14" height="27">
+                  <a class="social__link" href="#" target="_blank" aria-label="Фейсбук">
+                    <svg class="social__icon" width="14" height="27">
                       <use xlink:href="#icon-facebook"></use>
                     </svg>
                   </a>
@@ -80,24 +80,24 @@
             </div>
           </nav>
         </header>
-        <article class="main-screen__intro">
-          <h2 class="main-screen__title">Услуги риелтора</h2>
-          <p class="main-screen__slogan">Планируете продажу или покупку квартиры или дома?
+        <div class="main-screen__intro intro">
+          <h2 class="intro__title">Услуги риелтора</h2>
+          <p class="intro__slogan">Планируете продажу или покупку квартиры или дома?
             Оставьте заявку на бесплатную консультацию. Москва и Московская область</p>
-          <a class="main-screen__link" href="#feedback" aria-label="Переход к форме обратной связи">Консультация</a>
-          <a class="main-screen__phone" href="tel:+78008234888">+7 (926) 000-00-00</a>
-          <ul class="main-social main-screen__main-social-list">
+          <a class="intro__link" href="#feedback" aria-label="Переход к форме обратной связи">Консультация</a>
+          <a class="intro__phone" href="tel:+79260000000">+7 (926) 000-00-00</a>
+          <ul class="main-screen__social-main social-main">
             <li>
-              <a class="main-social__link main-social__link--vkontakte" href="#" target="_blank" aria-label="Вконтакте"></a>
+              <a class="social-main__link social-main__link--vkontakte" href="#" target="_blank" aria-label="Вконтакте"></a>
             </li>
             <li>
-              <a class="main-social__link main-social__link--instagram" href="#" target="_blank" aria-label="Инстаграм"></a>
+              <a class="social-main__link social-main__link--instagram" href="#" target="_blank" aria-label="Инстаграм"></a>
             </li>
             <li>
-              <a class="main-social__link main-social__link--facebook" href="#" target="_blank" aria-label="Фейсбук"></a>
+              <a class="social-main__link social-main__link--facebook" href="#" target="_blank" aria-label="Фейсбук"></a>
             </li>
           </ul>
-        </article>
+        </div>
       </section>
 
       <section class="features" id="features">
@@ -185,25 +185,45 @@
 
     <footer class="page-footer">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="page-footer__wrapper">
-        <ul class="social-list page-footer__list">
+      <div class="page-footer__lists">
+        <ul class="page-footer__menu menu menu--footer">
           <li>
-            <a class="social-list__link" href="#" target="_blank" aria-label="Вконтакте">
-              <svg class="social-list__icon social-list__icon--vkontakte" width="30" height="19">
+            <a class="menu__link" href="#main">Главная</a>
+          </li>
+          <li>
+            <a class="menu__link" href="#features">Преимущества</a>
+          </li>
+          <li>
+            <a class="menu__link" href="#portfolio">Портфолио</a>
+          </li>
+          <li>
+            <a class="menu__link" href="#stages">Этапы работы</a>
+          </li>
+          <li>
+            <a class="menu__link" href="#reviews">Отзывы</a>
+          </li>
+          <li>
+            <a class="menu__link" href="#feedback">Оставить заявку</a>
+          </li>
+        </ul>
+        <ul class="page-footer__social social">
+          <li>
+            <a class="social__link" href="#" target="_blank" aria-label="Вконтакте">
+              <svg class="social__icon" width="30" height="19">
                 <use xlink:href="#icon-vkontakte"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a class="social-list__link" href="#" target="_blank" aria-label="Инстаграм">
-              <svg class="social-list__icon social-list__icon--instagram" width="27" height="27">
+            <a class="social__link" href="#" target="_blank" aria-label="Инстаграм">
+              <svg class="social__icon" width="27" height="27">
                 <use xlink:href="#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a class="social-list__link" href="#" target="_blank" aria-label="Фейсбук">
-              <svg class="social-list__icon social-list__icon--facebook" width="14" height="27">
+            <a class="social__link" href="#" target="_blank" aria-label="Фейсбук">
+              <svg class="social__icon" width="14" height="27">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
@@ -212,7 +232,6 @@
         <p class="page-footer__phone">
           <a href="tel:+79260000000">+7 (926) 000-00-00</a>
         </p>
-        <p class="page-footer__info">&#169; Terehovskaia, 2020</p>
       </div>
     </footer>
 

@@ -1,0 +1,64 @@
+/* Блок menu — Меню */
+
+.menu {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.menu__link {
+  display: block;
+  margin: 0;
+  margin-bottom: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+  color: rgba(255, 163, 86, 1);
+}
+
+@media (min-width: 768px) {
+  .menu {
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu__link {
+    color: rgba(255, 255, 255, 0.75);
+  }
+}
+
+/* Для модификатора блока меню menu в футере  */
+
+.menu--footer {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.menu--footer .menu__link {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .menu--footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .menu--footer .menu__link {
+    margin-right: 30px;
+  }
+}

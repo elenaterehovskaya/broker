@@ -1,21 +1,23 @@
 /* Блок page-footer */
 
 .page-footer {
-  padding-top: 70px;
+  padding-top: 50px;
   padding-bottom: 50px;
-  background-color: rgba(0, 37, 67, 1);
+  background-color: rgb(0, 37, 67);
 }
 
-.page-footer__wrapper {
-  width: 290px;
+.page-footer__lists { /* обёртка для списка меню, списка социальных сетей и телефона */
+  width: 320px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-/* Блок социальных сетей social-list в page-footer */
+.page-footer__menu { /* для блока меню menu */
+  margin-bottom: 40px;
+}
 
-.page-footer__list {
-  width: 180px;
+.page-footer__social { /* для блока социальных сетей social */
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -23,52 +25,46 @@
   margin: 0;
   margin-bottom: 10px;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 2px;
 }
 
 .page-footer__phone a {
-  color: rgba(255, 163, 86, 1);
+  padding-left: 25px;
+  color: rgb(255, 255, 255);
   text-decoration: none;
+  background: url("../../images/icon-phone.svg") no-repeat 0 bottom;
 }
 
-.page-footer__info {
-  margin: 0;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 30px;
-  text-align: center;
-  letter-spacing: 1.5px;
-  color: rgba(255, 163, 86, 1);
+.page-footer__phone a:hover,
+.page-footer__phone a:focus {
+  color: rgb(255, 163, 86);
 }
 
 @media (min-width: 768px) {
-  .page-footer__wrapper {
+  .page-footer__lists {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    width: 698px;
+    flex-wrap: wrap;
+    width: 768px;
     padding: 0 35px;
   }
 
-  .page-footer__phone {
-    order: -1;
-    width: 33%;
-    margin: 0;
-    text-align: left;
+  .page-footer__menu {
+    width: 100%;
+    margin-bottom: 20px;
   }
 
-  .page-footer__info {
-    width: 33%;
-    text-align: right;
+  .page-footer__social {
+    margin: 0;
   }
 }
 
 @media (min-width: 1200px) {
-  .page-footer__wrapper {
-    width: 1170px;
+  .page-footer__lists {
+    width: 1200px;
     padding: 0 15px;
   }
 }

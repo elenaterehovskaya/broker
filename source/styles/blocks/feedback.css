@@ -1,8 +1,7 @@
-/* Блок feedback — Блок обратной связи */
+/* Блок feedback — Обратная связь */
 
 .feedback {
   position: relative;
-  box-sizing: border-box;
   width: auto;
   min-height: 1010px;
   padding-top: 75px;

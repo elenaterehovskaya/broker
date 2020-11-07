@@ -1,11 +1,5 @@
 /* Блок stages — Этапы работы */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .stages {
   width: 320px;
   margin: 0 auto;

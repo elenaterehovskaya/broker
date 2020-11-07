@@ -1,0 +1,59 @@
+/* Блок social-main — Социальные сети на главном экране */
+
+.social-main {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .social-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 260px;
+    margin-top: 140px;
+    margin-left: auto;
+    padding: 0;
+    list-style: none;
+  }
+
+  .social-main__link {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 35px;
+    background-color: rgba(8, 33, 53, 0.2);
+    cursor: pointer;
+  }
+
+  .social-main__link:hover,
+  .social-main__link:focus {
+    background-color: rgba(255, 163, 86, 0.85);
+    transition: 0.2s ease-in-out;
+  }
+
+  .social-main__link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .social-main__link--vkontakte::before {
+    width: 26px;
+    height: 15px;
+    background: url("../../images/icon-vkontakte.svg") no-repeat 0 0;
+  }
+
+  .social-main__link--instagram::before {
+    width: 21px;
+    height: 21px;
+    background: url("../../images/icon-instagram.svg") no-repeat 0 0;
+  }
+
+  .social-main__link--facebook::before {
+    width: 12px;
+    height: 22px;
+    background: url("../../images/icon-facebook.svg") no-repeat 0 0;
+  }
+}

@@ -1,0 +1,153 @@
+/* Блок intro с заголовком, слоганом и кнопкой-ссылкой */
+
+.intro {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 120px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.intro__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.intro__slogan {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+.intro__link {
+  position: relative;
+  display: inline-block;
+  padding: 20px 60px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: rgb(255, 163, 86);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.intro__link::before {
+  content: "";
+  position: absolute;
+  bottom: -85px;
+  left: 50%;
+  width: 3px;
+  height: 55px;
+  background-color: rgba(255, 255, 255, 0.6);
+  transform: translateX(-50%);
+}
+
+.intro__link::after {
+  content: "";
+  position: absolute;
+  bottom: -87px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.6);
+  border-left: 3px solid rgba(255, 255, 255, 0.6);
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.intro__phone {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    width: 768px;
+    padding: 0 60px;
+    padding-top: 150px;
+  }
+
+  .intro__title {
+    margin-bottom: 55px;
+    font-size: 90px;
+    line-height: 90px;
+  }
+
+  .intro__slogan {
+    margin-bottom: 45px;
+    font-size: 24px;
+  }
+
+  .intro__link {
+    padding: 25px 65px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 230px;
+    padding-left: 100px;
+    text-align: left;
+    background: transparent;
+  }
+
+  .intro__title {
+    width: 400px;
+    margin-bottom: 30px;
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .intro__slogan {
+    width: 400px;
+    margin-bottom: 50px;
+    font-size: 17px;
+  }
+
+  .intro__link {
+    padding: 20px;
+    padding-right: 120px;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 3px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+  }
+
+  .intro__link::before {
+    bottom: 50%;
+    left: 235px;
+    width: 50px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  .intro__link::after {
+    bottom: calc(50% - 4px);
+    left: 250px;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    transform: rotate(-135deg);
+  }
+
+  .intro__link:hover,
+  .intro__link:focus {
+    background-color: rgb(255, 163, 86);
+    transition: 0.2s ease-in-out;
+  }
+}

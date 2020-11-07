@@ -1,11 +1,13 @@
 @import "fonts.css";
 @import "globals.css";
 @import "blocks/visually-hidden.css";
+@import "blocks/menu.css";
+@import "blocks/social.css";
+@import "blocks/intro.css";
 @import "blocks/main-screen.css";
-@import "blocks/site-list.css";
-@import "blocks/social-list.css";
+@import "blocks/social-main.css";
 @import "blocks/features.css";
-@import "blocks/feedback.css";
 @import "blocks/form.css";
+@import "blocks/feedback.css";
 @import "blocks/stages.css";
 @import "blocks/page-footer.css";
