@@ -35,6 +35,7 @@
   font-weight: 800;
   font-size: 16px;
   line-height: 1;
+  vertical-align: top;
   letter-spacing: 2px;
   color: #ffffff;
   text-transform: uppercase;
@@ -44,27 +45,15 @@
   cursor: pointer;
 }
 
-.intro__link::before {
+.intro__link::after {
   content: "";
   position: absolute;
   bottom: -85px;
   left: 50%;
-  width: 3px;
-  height: 55px;
-  background-color: rgba(255, 255, 255, 0.6);
+  width: 13px;
+  height: 73px;
   transform: translateX(-50%);
-}
-
-.intro__link::after {
-  content: "";
-  position: absolute;
-  bottom: -87px;
-  left: 50%;
-  width: 8px;
-  height: 8px;
-  border-bottom: 3px solid rgba(255, 255, 255, 0.6);
-  border-left: 3px solid rgba(255, 255, 255, 0.6);
-  transform: translateX(-50%) rotate(-45deg);
+  background: url("../../images/icon-arrow.svg") no-repeat 0 0;
 }
 
 .intro__phone {
@@ -81,7 +70,6 @@
   .intro__title {
     margin-bottom: 55px;
     font-size: 90px;
-    line-height: 90px;
   }
 
   .intro__slogan {
@@ -97,11 +85,11 @@
 
 @media (min-width: 1200px) {
   .intro {
-    width: 1170px;
+    width: 1200px;
     margin: 0 auto;
-    padding: 0;
     padding-top: 230px;
-    padding-left: 100px;
+    padding-right: 15px;
+    padding-left: 110px;
     text-align: left;
     background: transparent;
   }
@@ -110,44 +98,66 @@
     width: 400px;
     margin-bottom: 30px;
     font-size: 60px;
-    line-height: 1;
   }
 
   .intro__slogan {
     width: 400px;
     margin-bottom: 50px;
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .intro__link {
     padding: 20px;
     padding-right: 120px;
     font-size: 14px;
-    line-height: 1;
     letter-spacing: 3px;
     background-color: transparent;
     border: 1px solid #ffffff;
   }
 
-  .intro__link::before {
-    bottom: 50%;
-    left: 235px;
-    width: 50px;
-    height: 2px;
-    background-color: #ffffff;
-  }
-
   .intro__link::after {
-    bottom: calc(50% - 4px);
-    left: 250px;
-    border-bottom: 2px solid #ffffff;
-    border-left: 2px solid #ffffff;
-    transform: rotate(-135deg);
+    bottom: -10px;
+    left: 230px;
+    transform: rotate(-90deg);
   }
 
   .intro__link:hover,
   .intro__link:focus {
     background-color: rgb(255, 163, 86);
     transition: 0.2s ease-in-out;
+  }
+
+  .intro__phone {
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    display: flex;
+    align-items: flex-end;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    color: rgba(0, 37, 67, 0.7);
+    text-decoration: none;
+    transform: translateX(0);
+  }
+
+  .intro__phone:hover,
+  .intro__phone:focus {
+    color: rgb(255, 163, 86);
+  }
+
+  .intro__phone::before {
+    content: "";
+    width: 18px;
+    height: 19px;
+    margin-right: 5px;
+    background: url("../../images/icon-phone.svg") no-repeat 0 0;
+  }
+
+  .intro__social-main {
+    margin-top: 135px;
+    margin-left: auto;
   }
 }

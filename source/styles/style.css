@@ -3,9 +3,9 @@
 @import "blocks/visually-hidden.css";
 @import "blocks/menu.css";
 @import "blocks/social.css";
+@import "blocks/social-main.css";
 @import "blocks/intro.css";
 @import "blocks/main-screen.css";
-@import "blocks/social-main.css";
 @import "blocks/features.css";
 @import "blocks/form.css";
 @import "blocks/feedback.css";

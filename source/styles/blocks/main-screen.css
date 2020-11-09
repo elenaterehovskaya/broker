@@ -203,33 +203,4 @@
     width: 38px;
     height: 3px;
   }
-
-  .main-screen__phone {
-    position: absolute;
-    top: 45px;
-    right: 0;
-    display: flex;
-    align-items: flex-end;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.2;
-    letter-spacing: 1px;
-    white-space: nowrap;
-    color: rgba(0, 37, 67, 0.7);
-    text-decoration: none;
-    transform: translateX(0);
-  }
-
-  .main-screen__phone:hover,
-  .main-screen__phone:focus {
-    color: rgb(255, 163, 86);
-  }
-
-  .main-screen__phone::before {
-    content: "";
-    width: 18px;
-    height: 19px;
-    margin-right: 5px;
-    background: url("../../images/icon-phone.svg") no-repeat 0 0;
-  }
 }
