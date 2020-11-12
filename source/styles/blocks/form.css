@@ -17,9 +17,9 @@
   display: none;
   font-weight: 400;
   font-size: 15px;
-  line-height: 18px;
+  line-height: 1.2;
   letter-spacing: 1px;
-  color: rgba(255, 163, 86, 1);
+  color: var(--color-orange);
 }
 
 .form__input {
@@ -29,36 +29,36 @@
   font: inherit;
   font-weight: 400;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 1;
   letter-spacing: 1.5px;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-white);
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid rgba(253, 229, 209, 0.8);
+  border-bottom: 2px solid var(--color-yellow-lighter);
   outline: none;
 }
 
 .form__input::-webkit-input-placeholder {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-white-lighter);
   opacity: 1;
 }
 
 .form__input:-ms-input-placeholder {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-white-lighter);
   opacity: 1;
 }
 
 .form__input::-ms-input-placeholder {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-white-lighter);
   opacity: 1;
 }
 
 .form__input::placeholder {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-white-lighter);
   opacity: 1;
 }
 
@@ -89,11 +89,11 @@
   padding: 25px 0;
   font-weight: 800;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 1;
   letter-spacing: 2.5px;
-  color: #ffffff;
+  color: var(--color-white);
   text-transform: uppercase;
-  background-color: rgba(255, 163, 86, 1);
+  background-color: var(--color-orange);
   border: none;
   border-radius: 5px;
   box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.07);
@@ -105,9 +105,9 @@
   margin-top: 20px;
   font-weight: 400;
   font-size: 15px;
-  line-height: 19px;
+  line-height: 1.2;
   letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-white-lighter);
 }
 
 @media (min-width: 1200px) {
@@ -118,7 +118,7 @@
   .form__input {
     padding: 10px 5px;
     font-size: 16px;
-    line-height: 16px;
+    line-height: 1;
   }
 
   .form__input::-webkit-input-placeholder {
@@ -140,14 +140,14 @@
   .form__button {
     padding: 22px 0;
     font-size: 15px;
-    line-height: 15px;
+    line-height: 1;
     background-color: transparent;
-    border: 2px solid #ffffff;
+    border: 2px solid var(--color-white);
   }
 
   .form__button:hover,
   .form__button:focus {
-    background-color: rgba(255, 163, 86, 1);
+    background-color: var(--color-orange);
     transition: 0.2s ease-in-out;
   }
 

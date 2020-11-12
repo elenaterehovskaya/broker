@@ -3,7 +3,7 @@
 .page-footer {
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: rgb(0, 37, 67);
+  background-color: var(--color-blue);
 }
 
 .page-footer__lists { /* обёртка для списка меню, списка социальных сетей и телефона */
@@ -33,14 +33,14 @@
 
 .page-footer__phone a {
   padding-left: 25px;
-  color: rgb(255, 255, 255);
+  color: var(--color-white);
   text-decoration: none;
   background: url("../../images/icon-phone.svg") no-repeat 0 bottom;
 }
 
 .page-footer__phone a:hover,
 .page-footer__phone a:focus {
-  color: rgb(255, 163, 86);
+  color: var(--color-orange);
 }
 
 @media (min-width: 768px) {

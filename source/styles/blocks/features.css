@@ -21,11 +21,11 @@
   font-family: "Playfair Display", "Times New Roman", serif;
   font-weight: 700;
   font-size: 85px;
-  color: rgba(255, 163, 86, 0.3);
+  color: var(--color-orange-lightest);
 }
 
 .features__item:hover::before {
-  color: rgba(255, 163, 86, 0.8);
+  color: var(--color-orange-lighter);
   transition: 0.2s ease-in-out;
 }
 
@@ -35,7 +35,7 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 1.2;
-  color: #313131;
+  color: var(--color-gray);
 }
 
 .features__description {

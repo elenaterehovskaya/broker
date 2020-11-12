@@ -15,14 +15,14 @@
   display: block;
   margin: 0;
   margin-bottom: 25px;
-  color: #ffffff;
+  color: var(--color-white);
   text-decoration: none;
   transition: 0.2s ease-in-out;
 }
 
 .menu__link:hover,
 .menu__link:focus {
-  color: rgba(255, 163, 86, 1);
+  color: var(--color-orange);
 }
 
 @media (min-width: 768px) {
@@ -34,7 +34,7 @@
 
 @media (min-width: 1200px) {
   .menu__link {
-    color: rgba(255, 255, 255, 0.75);
+    color: var(--color-white-lighter);
   }
 }
 

@@ -17,7 +17,7 @@
   line-height: 1.2;
   text-align: center;
   letter-spacing: 1px;
-  color: rgba(0, 37, 67, 1);
+  color: var(--color-blue);
 }
 
 .stages__list {
@@ -38,7 +38,7 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 1.2;
-  color: #313131;
+  color: var(--color-gray);
 }
 
 .stages__caption::after {
@@ -48,7 +48,7 @@
   left: 0;
   width: 45px;
   height: 1px;
-  background-color: rgba(0, 37, 67, 1);
+  background-color: var(--color-blue);
 }
 
 .stages__description {
@@ -100,15 +100,15 @@
     font-size: 14px;
     line-height: 1;
     text-align: center;
-    color: rgba(0, 0, 0, 0.7);
-    background-color: rgba(255, 163, 86, 0.4);
+    color: var(--color-black);
+    background-color: var(--color-orange-lightest);
     border-radius: 50%;
-    box-shadow: 0 0 0 6px #fdfaf3, 0 0 0 7px rgba(255, 163, 86, 0.4), 0 0 0 13px #fdfaf3, 0 0 0 14px rgba(255, 163, 86, 0.4);
+    box-shadow: 0 0 0 6px var(--color-light), 0 0 0 7px var(--color-orange-lightest), 0 0 0 13px var(--color-light), 0 0 0 14px var(--color-orange-lightest);
   }
 
   .stages__item:hover::before {
-    background-color: rgba(255, 163, 86, 0.8);
-    box-shadow: 0 0 0 6px #fdfaf3, 0 0 0 7px rgba(255, 163, 86, 0.8), 0 0 0 13px #fdfaf3, 0 0 0 14px rgba(255, 163, 86, 0.8);
+    background-color: var(--color-orange-lighter);
+    box-shadow: 0 0 0 6px var(--color-light), 0 0 0 7px var(--color-orange-lighter), 0 0 0 13px var(--color-light), 0 0 0 14px var(--color-orange-lighter);
     transition: 0.2s ease-in-out;
   }
 }

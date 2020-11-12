@@ -6,7 +6,7 @@
   margin: 0 auto;
   padding-top: 120px;
   text-align: center;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .intro__title {
@@ -37,11 +37,11 @@
   line-height: 1;
   vertical-align: top;
   letter-spacing: 2px;
-  color: #ffffff;
+  color: var(--color-white);
   text-transform: uppercase;
   text-decoration: none;
-  background-color: rgb(255, 163, 86);
-  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-orange);
+  box-shadow: 5px 5px 30px 15px var(--color-black-lightest);
   cursor: pointer;
 }
 
@@ -112,7 +112,7 @@
     font-size: 14px;
     letter-spacing: 3px;
     background-color: transparent;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--color-white);
   }
 
   .intro__link::after {
@@ -123,7 +123,7 @@
 
   .intro__link:hover,
   .intro__link:focus {
-    background-color: rgb(255, 163, 86);
+    background-color: var(--color-orange);
     transition: 0.2s ease-in-out;
   }
 
@@ -138,14 +138,14 @@
     line-height: 1.2;
     letter-spacing: 1px;
     white-space: nowrap;
-    color: rgba(0, 37, 67, 0.7);
+    color: var(--color-blue-lightest);
     text-decoration: none;
     transform: translateX(0);
   }
 
   .intro__phone:hover,
   .intro__phone:focus {
-    color: rgb(255, 163, 86);
+    color: var(--color-orange);
   }
 
   .intro__phone::before {

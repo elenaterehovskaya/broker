@@ -19,13 +19,13 @@
     display: block;
     width: 80px;
     height: 35px;
-    background-color: rgba(8, 33, 53, 0.2);
+    background-color: var(--color-black-lighter);
     cursor: pointer;
   }
 
   .social-main__link:hover,
   .social-main__link:focus {
-    background-color: rgba(255, 163, 86, 0.85);
+    background-color: var(--color-orange-lighter);
     transition: 0.2s ease-in-out;
   }
 

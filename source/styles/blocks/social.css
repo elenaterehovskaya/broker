@@ -12,10 +12,10 @@
 
 .social__icon {
   display: block;
-  fill: rgba(255, 255, 255, 0.9);
+  fill: var(--color-yellow);
 }
 
 .social__icon:hover,
 .social__icon:focus {
-  fill: rgb(255, 163, 86);
+  fill: var(--color-orange);
 }
