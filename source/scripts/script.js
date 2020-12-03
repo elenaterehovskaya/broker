@@ -57,3 +57,34 @@ imagePrev.addEventListener("click", function() {
     images[i].classList.add("portfolio__item--active");
   }
 });
+
+// Слайдер для блока отзывов — reviews
+let reviewNext = document.querySelector(".reviews__button--next");
+let reviewPrev = document.querySelector(".reviews__button--prev");
+let reviews = document.querySelectorAll(".reviews__item");
+let j = 0;
+
+reviewNext.addEventListener("click", function() {
+  if (reviews[j].classList.contains("reviews__item--active")) {
+    reviews[j].classList.remove("reviews__item--active");
+    j++;
+
+    if (j >= reviews.length) {
+      j = 0;
+    }
+    reviews[j].classList.add("reviews__item--active");
+  }
+});
+
+reviewPrev.addEventListener("click", function() {
+  if (reviews[j].classList.contains("reviews__item--active")) {
+    reviews[j].classList.remove("reviews__item--active");
+    j--;
+
+    if (j < 0) {
+      j = reviews.length - 1;
+    }
+    reviews[j].classList.add("reviews__item--active");
+  }
+});
+

@@ -1,0 +1,33 @@
+.slider__toggles {
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+  margin: 0 auto;
+}
+
+.slider__toggle {
+  position: relative;
+  width: 33px;
+  height: 13px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.slider__toggle::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 33px;
+  height: 3px;
+  background-color: var(--color-black-lightest);
+}
+
+.slider__toggle:hover::before,
+.slider__toggle--active::before {
+  background-color: var(--color-blue);
+}
