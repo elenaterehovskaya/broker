@@ -7,7 +7,8 @@
 @import "blocks/intro.css";
 @import "blocks/main-screen.css";
 @import "blocks/features.css";
+@import "blocks/portfolio.css";
+@import "blocks/stages.css";
 @import "blocks/form.css";
 @import "blocks/feedback.css";
-@import "blocks/stages.css";
 @import "blocks/page-footer.css";

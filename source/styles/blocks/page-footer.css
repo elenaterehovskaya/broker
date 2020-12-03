@@ -1,6 +1,7 @@
 /* Блок page-footer */
 
 .page-footer {
+  margin-top: 100px;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: var(--color-blue);

@@ -85,7 +85,7 @@
           <p class="intro__slogan">Планируете продажу или покупку квартиры или дома?
             Оставьте заявку на бесплатную консультацию. Москва и Московская область</p>
           <a class="intro__link" href="#feedback" aria-label="Переход к форме обратной связи">Консультация</a>
-          <a class="intro__phone" href="tel:+79260000000">+7 (926) 000-00-00</a>
+          <a class="intro__phone" href="tel:+79260000000">+7 (926) 000 00 00</a>
           <ul class="intro__social-main social-main">
             <li>
               <a class="social-main__link social-main__link--vkontakte" href="#" target="_blank" aria-label="Вконтакте"></a>
@@ -122,27 +122,40 @@
         </ol>
       </section>
 
-      <section class="feedback" id="feedback">
-        <div class="feedback__wrapper">
-          <h2 class="feedback__title">Планируете продажу, покупку квартиры или дома?</h2>
-          <p class="feedback__text">Оставьте заявку на бесплатную консультацию для уточнения всех деталей.
-            Москва и&nbsp;Московская область</p>
-          <form class="form feedback__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
-            <p class="form__item">
-              <input class="form__input" id="name" type="text" name="name" placeholder="Имя*" required="">
-              <label class="form__label" for="name">Имя</label>
-            </p>
-            <p class="form__item">
-              <input class="form__input" id="phone" type="tel" name="phone" placeholder="Телефон*" required="">
-              <label class="form__label" for="phone">Телефон</label>
-            </p>
-            <p class="form__item">
-              <input class="form__input" id="email" type="email" name="email" placeholder="E-mail*" required="">
-              <label class="form__label" for="email">E-mail</label>
-            </p>
-            <button class="form__button" type="submit">Отправить</button>
-            <p class="form__info">Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
-          </form>
+      <section class="portfolio">
+        <div class="portfolio__wrapper">
+          <h2 class="portfolio__title" id="portfolio">Портфолио</h2>
+          <p class="portfolio__caption">Все проекты</p>
+        </div>
+        <div class="portfolio__contents">
+          <img class="portfolio__intro" src="images/photo-zastavka-left-tablet@1x.jpg" width="265" height="650" alt="Фото заставки">
+          <ul class="portfolio__list">
+            <li class="portfolio__item portfolio__item--active">
+              <img class="portfolio__photo" src="images/photo-01-tablet@1x.jpg" width="600" height="650" alt="Фото интерьера 1">
+            </li>
+            <li class="portfolio__item">
+              <img class="portfolio__photo" src="images/photo-02-tablet@1x.jpg" width="600" height="650" alt="Фото интерьера 2">
+            </li>
+            <li class="portfolio__item">
+              <img class="portfolio__photo" src="images/photo-03-tablet@1x.jpg" width="600" height="650" alt="Фото интерьера 3">
+            </li>
+            <li class="portfolio__item">
+              <img class="portfolio__photo" src="images/photo-04-tablet@1x.jpg" width="600" height="650" alt="Фото интерьера 4">
+            </li>
+            <li class="portfolio__item">
+              <img class="portfolio__photo" src="images/photo-05-tablet@1x.jpg" width="600" height="650" alt="Фото интерьера 5">
+            </li>
+            <li class="portfolio__item">
+              <img class="portfolio__photo" src="images/photo-06-tablet@1x.jpg" width="600" height="650" alt="Фото интерьера 6">
+            </li>
+          </ul>
+          <img class="portfolio__intro" src="images/photo-zastavka-right-tablet@1x.jpg" width="265" height="650" alt="Фото заставки">
+          <button class="portfolio__button portfolio__button--prev" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="portfolio__button portfolio__button--next" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
         </div>
       </section>
 
@@ -180,6 +193,30 @@
               Сопровождение сделки в банке. Помощь при регистрации квартиры в Росреестре.</p>
           </li>
         </ol>
+      </section>
+
+      <section class="feedback" id="feedback">
+        <div class="feedback__wrapper">
+          <h2 class="feedback__title">Планируете продажу, покупку квартиры или дома?</h2>
+          <p class="feedback__text">Оставьте заявку на бесплатную консультацию для уточнения всех деталей.
+            Москва и&nbsp;Московская область</p>
+          <form class="form feedback__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+            <p class="form__item">
+              <input class="form__input" id="name" type="text" name="name" placeholder="Имя*" required="">
+              <label class="form__label" for="name">Имя</label>
+            </p>
+            <p class="form__item">
+              <input class="form__input" id="phone" type="tel" name="phone" placeholder="Телефон*" required="">
+              <label class="form__label" for="phone">Телефон</label>
+            </p>
+            <p class="form__item">
+              <input class="form__input" id="email" type="email" name="email" placeholder="E-mail*" required="">
+              <label class="form__label" for="email">E-mail</label>
+            </p>
+            <button class="form__button" type="submit">Отправить</button>
+            <p class="form__info">Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
+          </form>
+        </div>
       </section>
     </main>
 
@@ -230,7 +267,7 @@
           </li>
         </ul>
         <p class="page-footer__phone">
-          <a href="tel:+79260000000">+7 (926) 000-00-00</a>
+          <a href="tel:+79260000000">+7 (926) 000 00 00</a>
         </p>
       </div>
     </footer>
