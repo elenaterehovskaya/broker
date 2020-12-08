@@ -5,17 +5,21 @@
   justify-content: space-between;
   align-items: center;
   width: 180px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
 
 .social__icon {
   display: block;
-  fill: var(--color-yellow);
+  fill: var(--color-white);
 }
 
 .social__icon:hover,
 .social__icon:focus {
   fill: var(--color-orange);
+}
+
+.social__icon--footer {
+  width: 80%;
 }

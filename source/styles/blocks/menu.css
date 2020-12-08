@@ -1,6 +1,9 @@
 /* Блок menu — Меню */
 
 .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   padding: 0;
   font-weight: 600;
@@ -42,23 +45,30 @@
 
 .menu--footer {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .menu--footer .menu__link {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 768px) {
   .menu--footer {
-    display: flex;
-    justify-content: space-between;
+    height: 80px;
+    align-items: flex-start;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu--footer {
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
     font-size: 14px;
-    letter-spacing: 2px;
   }
 
-  .menu--footer .menu__link {
-    margin-right: 30px;
+  .menu__link {
+    color: var(--color-white);
   }
 }

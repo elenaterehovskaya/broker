@@ -7,59 +7,19 @@
   background-color: var(--color-blue);
 }
 
-.page-footer__lists { /* обёртка для списка меню, списка социальных сетей и телефона */
+.page-footer__lists {
   width: 320px;
-  margin: 0 auto;
-  padding: 0 15px;
+  margin: 0 auto
 }
 
-.page-footer__menu { /* для блока меню menu */
-  margin-bottom: 40px;
-}
-
-.page-footer__social { /* для блока социальных сетей social */
-  margin: 0 auto;
+.page-footer__menu {
   margin-bottom: 20px;
-}
-
-.page-footer__phone {
-  margin: 0;
-  margin-bottom: 10px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 2px;
-}
-
-.page-footer__phone a {
-  padding-left: 25px;
-  color: var(--color-white);
-  text-decoration: none;
-  background: url("../../images/icon-phone.svg") no-repeat 0 bottom;
-}
-
-.page-footer__phone a:hover,
-.page-footer__phone a:focus {
-  color: var(--color-orange);
 }
 
 @media (min-width: 768px) {
   .page-footer__lists {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     width: 768px;
     padding: 0 35px;
-  }
-
-  .page-footer__menu {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .page-footer__social {
-    margin: 0;
   }
 }
 
