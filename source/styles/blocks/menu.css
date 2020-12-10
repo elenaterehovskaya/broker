@@ -3,7 +3,9 @@
 .menu {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  height: 90%;
   margin: 0;
   padding: 0;
   font-weight: 600;
@@ -17,7 +19,6 @@
 .menu__link {
   display: block;
   margin: 0;
-  margin-bottom: 25px;
   color: var(--color-white);
   text-decoration: none;
   transition: 0.2s ease-in-out;
