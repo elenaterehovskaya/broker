@@ -7,25 +7,6 @@
   background-color: var(--color-blue);
 }
 
-.page-footer__lists {
-  width: 320px;
-  margin: 0 auto
-}
-
 .page-footer__menu {
   margin-bottom: 20px;
-}
-
-@media (min-width: 768px) {
-  .page-footer__lists {
-    width: 768px;
-    padding: 0 35px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .page-footer__lists {
-    width: 1200px;
-    padding: 0 15px;
-  }
 }

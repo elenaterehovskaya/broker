@@ -1,30 +1,21 @@
 /* Блок feedback — Обратная связь */
 
 .feedback {
-  position: relative;
-  width: auto;
   min-height: 1010px;
   margin-top: 100px;
   padding-top: 75px;
   text-align: center;
-  background: url("../../images/forma-tablet@1x.jpg") no-repeat center;
+  background-image:
+    linear-gradient(to right, var(--color-blue-lighter) 100%, transparent 0%),
+    url("../../images/forma-tablet@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-}
-
-.feedback::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 1010px;
-  background-color: var(--color-blue-lighter);
 }
 
 .feedback__wrapper {
   position: relative;
   z-index: 10;
-  box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
   padding: 0 15px;
@@ -55,10 +46,6 @@
     min-height: 850px;
   }
 
-  .feedback::before {
-    min-height: 850px;
-  }
-
   .feedback__wrapper {
     width: 500px;
   }
@@ -71,12 +58,10 @@
 @media (min-width: 1200px) {
   .feedback {
     min-height: 770px;
-    background: url("../../images/forma-desktop@1x.jpg") no-repeat center;
-  }
-
-  .feedback::before {
-    width: 50%;
-    min-height: 770px;
+    background-image:
+      linear-gradient(to right, var(--color-blue-lighter) 50%, transparent 50%),
+      url("../../images/forma-desktop@1x.jpg");
+    background-size: auto;
   }
 
   .feedback__wrapper {
